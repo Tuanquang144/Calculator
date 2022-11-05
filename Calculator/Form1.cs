@@ -20,11 +20,14 @@ namespace Calculator
         private void btCong_Click(object sender, EventArgs e)
         {
             int a, b, ketQua;
-            a = int.Parse(txtA.Text);
-            b = int.Parse(txtB.Text);
-            ketQua = a + b;
-            txtKetQua.Text = ketQua.ToString();
+            if (txtA.Text !=String.Empty)
+            {
+                a = int.Parse(txtA.Text);
+                b = int.Parse(txtB.Text);
+                ketQua = a + b;
+                txtKetQua.Text = ketQua.ToString();
 
+            }
         }
     }
 }
