@@ -36,7 +36,7 @@ namespace Calculator
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -96,21 +96,22 @@ namespace Calculator
             this.txtB.Size = new System.Drawing.Size(423, 34);
             this.txtB.TabIndex = 6;
             // 
-            // button1
+            // btCong
             // 
-            this.button1.Location = new System.Drawing.Point(503, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 51);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCong.Location = new System.Drawing.Point(182, 215);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(49, 51);
+            this.btCong.TabIndex = 7;
+            this.btCong.Text = "+";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 304);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.txtA);
@@ -120,7 +121,7 @@ namespace Calculator
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Tính toán";
             this.ResumeLayout(false);
@@ -137,7 +138,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.TextBox txtB;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btCong;
     }
 }
 
